@@ -58,10 +58,15 @@ abstract class animal extends organism{
   }
  
   boolean indanger(){
-    if(dist(pos.x,pos.y,enemy.pos.x,enemy.pos.y) <= 100){
-      return true;
-    }else{
+    if(enemy ==null){
       return false;
+
+    }else if{
+      if(dist(pos.x,pos.y,enemy.pos.x,enemy.pos.y) <= 100){
+        return true;
+      }else{
+        return false;
+    }
     }
  }
  
